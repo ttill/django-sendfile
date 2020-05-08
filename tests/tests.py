@@ -6,7 +6,7 @@ from unittest import TestCase
 
 from django.http import Http404, HttpRequest, HttpResponse
 from django.test.utils import override_settings
-from django.utils.six.moves.urllib.parse import unquote
+from urllib.parse import unquote
 
 from sendfile import sendfile as real_sendfile
 from sendfile import _get_sendfile
